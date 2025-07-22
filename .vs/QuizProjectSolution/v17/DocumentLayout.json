@@ -1,0 +1,483 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\QuizProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D1F18C22-CA8E-45C5-80AC-CA1738A50E3C}|QuizProject.MVC\\QuizProject.MVC.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.mvc\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1F18C22-CA8E-45C5-80AC-CA1738A50E3C}|QuizProject.MVC\\QuizProject.MVC.csproj|solutionrelative:quizproject.mvc\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1F18C22-CA8E-45C5-80AC-CA1738A50E3C}|QuizProject.MVC\\QuizProject.MVC.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F18C22-CA8E-45C5-80AC-CA1738A50E3C}|QuizProject.MVC\\QuizProject.MVC.csproj|solutionrelative:quizproject.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1F18C22-CA8E-45C5-80AC-CA1738A50E3C}|QuizProject.MVC\\QuizProject.MVC.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.mvc\\services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F18C22-CA8E-45C5-80AC-CA1738A50E3C}|QuizProject.MVC\\QuizProject.MVC.csproj|solutionrelative:quizproject.mvc\\services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1F18C22-CA8E-45C5-80AC-CA1738A50E3C}|QuizProject.MVC\\QuizProject.MVC.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F18C22-CA8E-45C5-80AC-CA1738A50E3C}|QuizProject.MVC\\QuizProject.MVC.csproj|solutionrelative:quizproject.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\dtos\\useranswerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\dtos\\useranswerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\dtos\\updateuserprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\dtos\\updateuserprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\dtos\\updateuserlockstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\dtos\\updateuserlockstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\dtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\dtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\dtos\\submitanswerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\dtos\\submitanswerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\dtos\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\dtos\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\dtos\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\dtos\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\dtos\\forgotpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\dtos\\forgotpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\dtos\\answersubmissiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\dtos\\answersubmissiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\dtos\\admincreateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\dtos\\admincreateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\services\\dummyemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\services\\dummyemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\services\\smtpemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\services\\smtpemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\services\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\services\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|c:\\users\\asus\\desktop\\quizproject\\quizproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80BA3A68-F892-4AB5-8AAB-52D986C1FCCC}|QuizProject.API\\QuizProject.API.csproj|solutionrelative:quizproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "QuizProject.MVC\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "QuizProject.MVC\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAMwBAAAAAAAAAAAcwPsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-22T23:27:10.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "QuizProject.MVC\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "QuizProject.MVC\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAMEAAAAAAAAAAADwv/EAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:20:44.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\Services\\EmailSender.cs",
+              "RelativeDocumentMoniker": "QuizProject.MVC\\Services\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\Services\\EmailSender.cs",
+              "RelativeToolTip": "QuizProject.MVC\\Services\\EmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:19:58.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\Program.cs",
+              "RelativeDocumentMoniker": "QuizProject.MVC\\Program.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\Program.cs",
+              "RelativeToolTip": "QuizProject.MVC\\Program.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAqwHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:19:40.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TeacherController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Controllers\\TeacherController.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Controllers\\TeacherController.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Controllers\\TeacherController.cs",
+              "RelativeToolTip": "QuizProject.API\\Controllers\\TeacherController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:01:50.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "QuizProject.API\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAuwLYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:01:40.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "QuizProject.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAKwBAAAAAAAAAAAAAMIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:01:25.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserAnswerDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\UserAnswerDto.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Dtos\\UserAnswerDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\UserAnswerDto.cs",
+              "RelativeToolTip": "QuizProject.API\\Dtos\\UserAnswerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:01:06.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UpdateUserProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\UpdateUserProfileDto.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Dtos\\UpdateUserProfileDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\UpdateUserProfileDto.cs",
+              "RelativeToolTip": "QuizProject.API\\Dtos\\UpdateUserProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:01:01.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UpdateUserLockStatusDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\UpdateUserLockStatusDto.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Dtos\\UpdateUserLockStatusDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\UpdateUserLockStatusDto.cs",
+              "RelativeToolTip": "QuizProject.API\\Dtos\\UpdateUserLockStatusDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:00:56.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UpdateUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\UpdateUserDto.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Dtos\\UpdateUserDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\UpdateUserDto.cs",
+              "RelativeToolTip": "QuizProject.API\\Dtos\\UpdateUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:00:51.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SubmitAnswerDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\SubmitAnswerDto.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Dtos\\SubmitAnswerDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\SubmitAnswerDto.cs",
+              "RelativeToolTip": "QuizProject.API\\Dtos\\SubmitAnswerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:00:44.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ResetPasswordDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\ResetPasswordDto.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Dtos\\ResetPasswordDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\ResetPasswordDto.cs",
+              "RelativeToolTip": "QuizProject.API\\Dtos\\ResetPasswordDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:00:38.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Dtos\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\RegisterDto.cs",
+              "RelativeToolTip": "QuizProject.API\\Dtos\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:00:32.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "QuestionDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\QuestionDto.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Dtos\\QuestionDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\QuestionDto.cs",
+              "RelativeToolTip": "QuizProject.API\\Dtos\\QuestionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:00:27.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\LoginDto.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Dtos\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\LoginDto.cs",
+              "RelativeToolTip": "QuizProject.API\\Dtos\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:00:21.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ForgotPasswordDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\ForgotPasswordDto.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Dtos\\ForgotPasswordDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\ForgotPasswordDto.cs",
+              "RelativeToolTip": "QuizProject.API\\Dtos\\ForgotPasswordDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:00:15.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AnswerSubmissionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\AnswerSubmissionDTO.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Dtos\\AnswerSubmissionDTO.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\AnswerSubmissionDTO.cs",
+              "RelativeToolTip": "QuizProject.API\\Dtos\\AnswerSubmissionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:00:09.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdminCreateUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\AdminCreateUserDto.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Dtos\\AdminCreateUserDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Dtos\\AdminCreateUserDto.cs",
+              "RelativeToolTip": "QuizProject.API\\Dtos\\AdminCreateUserDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:00:03.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DummyEmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Services\\DummyEmailSender.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Services\\DummyEmailSender.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Services\\DummyEmailSender.cs",
+              "RelativeToolTip": "QuizProject.API\\Services\\DummyEmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T22:59:20.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SmtpEmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Services\\SmtpEmailSender.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Services\\SmtpEmailSender.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Services\\SmtpEmailSender.cs",
+              "RelativeToolTip": "QuizProject.API\\Services\\SmtpEmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T22:59:27.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IEmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Services\\IEmailSender.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Services\\IEmailSender.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Services\\IEmailSender.cs",
+              "RelativeToolTip": "QuizProject.API\\Services\\IEmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T22:59:22.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Settings\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Settings\\JwtSettings.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Settings\\JwtSettings.cs",
+              "RelativeToolTip": "QuizProject.API\\Settings\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T22:59:08.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\appsettings.json",
+              "RelativeDocumentMoniker": "QuizProject.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\appsettings.json",
+              "RelativeToolTip": "QuizProject.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-22T22:59:00.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Program.cs",
+              "RelativeDocumentMoniker": "QuizProject.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\Program.cs",
+              "RelativeToolTip": "QuizProject.API\\Program.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAqwIUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T22:58:53.023Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 81,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

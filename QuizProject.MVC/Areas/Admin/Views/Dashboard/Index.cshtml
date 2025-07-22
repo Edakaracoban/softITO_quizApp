@@ -1,0 +1,395 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model QuizProject.MVC.ViewModels.DashboardViewModel
+
+<style>
+    .dashboard-header {
+        margin-bottom: 2rem;
+    }
+
+    .pie-chart-card {
+        max-width: 600px;
+        width: 500px;
+        margin: 0 auto; /* Ortalamak için */
+        padding-right: 40px; /* Legend ile grafik arası boşluk */
+    }
+
+        .pie-chart-card canvas {
+            width: 100% !important;
+            max-width: 400px;
+            height: auto !important;
+        }
+
+    .card.stat-card {
+        border: none;
+        border-radius: 1rem;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        padding-bottom: 1rem;
+    }
+
+        .card.stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+
+    .card-icon {
+        font-size: 2.2rem;
+        opacity: 0.8;
+    }
+
+    .trend-up {
+        color: #198754; /* green */
+    }
+
+    .trend-down {
+        color: #dc3545; /* red */
+    }
+
+    canvas.sparkline {
+        position: absolute;
+        bottom: 0.8rem;
+        left: 1.5rem;
+        width: calc(100% - 3rem) !important;
+        height: 50px !important;
+    }
+
+    .question-item {
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+
+        .question-item:hover {
+            background-color: #f0f8ff; /* Açık mavi */
+            transform: scale(1.03);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 0.5rem;
+        }
+</style>
+
+<div class="dashboard-header">
+    <h2 class="fw-bold">📊 Admin Dashboard</h2>
+    <p class="text-muted">Overview of categories, quizzes, questions and user statistics</p>
+</div>
+
+<div class="row g-4 mb-5">
+    <!-- Categories Card -->
+    <div class="col-md-3">
+        <div class="card stat-card bg-light shadow-sm p-3">
+            <div class="d-flex align-items-center mb-3">
+                <div class="me-3 text-danger card-icon"><i class="bi bi-folder-fill"></i></div>
+                <div>
+                    <small class="text-muted">Categories</small>
+                    <h4 class="mb-0 fw-bold">@Model.TotalCategories</h4>
+                    <small class="trend-up">
+                        <i class="bi bi-arrow-up"></i> +12% last month
+                    </small>
+                </div>
+            </div>
+            <canvas id="sparklineCategories" class="sparkline"></canvas>
+        </div>
+    </div>
+
+    <!-- Quizzes Card -->
+    <div class="col-md-3">
+        <div class="card stat-card bg-light shadow-sm p-3">
+            <div class="d-flex align-items-center mb-3">
+                <div class="me-3 text-success card-icon"><i class="bi bi-ui-checks-grid"></i></div>
+                <div>
+                    <small class="text-muted">Quizzes</small>
+                    <h4 class="mb-0 fw-bold">@Model.TotalQuizzes</h4>
+                    <small class="trend-up">
+                        <i class="bi bi-arrow-up"></i> +8% last month
+                    </small>
+                </div>
+            </div>
+            <canvas id="sparklineQuizzes" class="sparkline"></canvas>
+        </div>
+    </div>
+
+    <!-- Users Card -->
+    <div class="col-md-3">
+        <div class="card stat-card bg-light shadow-sm p-3">
+            <div class="d-flex align-items-center mb-3">
+                <div class="me-3 text-primary card-icon"><i class="bi bi-people-fill"></i></div>
+                <div>
+                    <small class="text-muted">Users</small>
+                    <h4 class="mb-0 fw-bold">@Model.TotalUsers</h4>
+                    <small class="trend-down">
+                        <i class="bi bi-arrow-down"></i> -2% last month
+                    </small>
+                </div>
+            </div>
+            <canvas id="sparklineUsers" class="sparkline"></canvas>
+        </div>
+    </div>
+
+    <!-- Quiz Results Card -->
+    <div class="col-md-3">
+        <div class="card stat-card bg-light shadow-sm p-3">
+            <div class="d-flex align-items-center mb-3">
+                <div class="me-3 text-purple card-icon"><i class="bi bi-clipboard-data-fill"></i></div>
+                <div>
+                    <small class="text-muted">Quiz Results</small>
+                    <h4 class="mb-0 fw-bold">@Model.TotalUserQuizResults</h4>
+                    <small class="trend-up">
+                        <i class="bi bi-arrow-up"></i> +5% last month
+                    </small>
+                </div>
+            </div>
+            <canvas id="sparklineResults" class="sparkline"></canvas>
+        </div>
+    </div>
+</div>
+
+<hr class="my-5" />
+
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="card shadow-sm p-3">
+            <h6 class="fw-bold">Quiz Count by Category (Bar Chart)</h6>
+            <canvas id="quizBarChart"></canvas>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card shadow-sm p-3 pie-chart-card">
+            <h6 class="fw-bold">Quiz Distribution (Pie Chart)</h6>
+            <canvas id="categoryPieChart"></canvas>
+        </div>
+    </div>
+</div>
+<hr class="my-5" />
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card shadow-sm p-3">
+            <h6 class="fw-bold mb-3">🆕 Recently Added Questions</h6>
+            @if (Model.RecentQuestions != null && Model.RecentQuestions.Any())
+            {
+                <div id="recentQuestionsContainer" style="max-height: 400px; overflow: hidden; position: relative;">
+                    <ul id="recentQuestionsList" class="list-group list-group-flush">
+                        @foreach (var question in Model.RecentQuestions)
+                        {
+                            <li class="list-group-item question-item">
+                                <strong>@question.QuestionText</strong><br />
+                                <small class="text-muted">Quiz: @question.QuizName</small>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            }
+            else
+            {
+                <p class="text-muted">No recently added questions.</p>
+            }
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+              (function() {
+            const container = document.getElementById('recentQuestionsContainer');
+            const list = document.getElementById('recentQuestionsList');
+            let scrollTop = 0;
+            let scrollSpeed = 1; // px per frame
+            let rafId;
+
+            // Clone list items to create seamless loop
+            const clone = list.cloneNode(true);
+            list.parentNode.appendChild(clone);
+            clone.style.position = 'absolute';
+            clone.style.top = list.offsetHeight + 'px';
+            clone.style.left = '0';
+            clone.style.right = '0';
+
+            function scroll() {
+                scrollTop += scrollSpeed;
+                if (scrollTop >= list.offsetHeight) {
+                    scrollTop = 0;
+                }
+                list.style.transform = `translateY(-${scrollTop}px)`;
+                clone.style.transform = `translateY(-${scrollTop}px)`;
+                rafId = requestAnimationFrame(scroll);
+            }
+
+            // Başlat
+            rafId = requestAnimationFrame(scroll);
+
+            // Hover ile kaydırmayı durdur / devam ettir
+            container.addEventListener('mouseenter', () => {
+                cancelAnimationFrame(rafId);
+            });
+            container.addEventListener('mouseleave', () => {
+                rafId = requestAnimationFrame(scroll);
+            });
+        })();
+        const chartColors = ['#198754', '#0d6efd', '#dc3545', '#ffc107', '#6f42c1'];
+
+        // Sparkline örnek veriler (dinamik backend ile değiştirilebilir)
+        const sparkDataCategories = [3, 4, 5, 6, 7, 8, 10];
+        const sparkDataQuizzes = [8, 7, 9, 11, 12, 13, 15];
+        const sparkDataUsers = [20, 18, 19, 17, 16, 15, 14];
+        const sparkDataResults = [50, 52, 53, 55, 56, 58, 60];
+
+        function createSparkline(ctx, data, color) {
+            return new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: data.map((_, i) => i + 1),
+                    datasets: [{
+                        data: data,
+                        borderColor: color,
+                        backgroundColor: color.replace('1)', '0.2)'),
+                        fill: true,
+                        tension: 0.3,
+                        pointRadius: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    animation: {
+                        duration: 1000,
+                        easing: 'easeOutQuart'
+                    },
+                    scales: {
+                        x: { display: false },
+                        y: { display: false }
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: { enabled: false }
+                    },
+                    elements: {
+                        line: { borderWidth: 2 }
+                    },
+                    interaction: {
+                        intersect: false,
+                        mode: 'nearest'
+                    }
+                }
+            });
+        }
+
+        createSparkline(document.getElementById('sparklineCategories').getContext('2d'), sparkDataCategories, 'rgba(220, 53, 69, 1)');
+        createSparkline(document.getElementById('sparklineQuizzes').getContext('2d'), sparkDataQuizzes, 'rgba(25, 135, 84, 1)');
+        createSparkline(document.getElementById('sparklineUsers').getContext('2d'), sparkDataUsers, 'rgba(13, 110, 253, 1)');
+        createSparkline(document.getElementById('sparklineResults').getContext('2d'), sparkDataResults, 'rgba(108, 117, 125, 1)');
+
+        // Ana grafik verileri
+        const labels = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.PopularCategories.Select(c => c.CategoryName).ToList()));
+        const data = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.PopularCategories.Select(c => c.QuizCount).ToList()));
+
+        // Bar Chart
+        new Chart(document.getElementById('quizBarChart'), {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Number of Quizzes',
+                    data: data,
+                    backgroundColor: chartColors,
+                    borderRadius: 8,
+                    borderSkipped: false,
+                    borderWidth: 1,
+                    borderColor: 'rgba(0,0,0,0.1)',
+                    hoverBorderWidth: 2,
+                    hoverBorderColor: '#000',
+                    hoverBackgroundColor: 'rgba(13,110,253,0.8)'
+                }]
+            },
+            options: {
+                responsive: true,
+                animation: {
+                    duration: 3000,
+                    easing: 'easeOutBounce'
+                },
+                hover: {
+                    animationDuration: 400,
+                    mode: 'nearest',
+                    intersect: true
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { stepSize: 1 }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            usePointStyle: true,
+                            pointStyle: 'circle',
+                            padding: 40,
+                        }
+                    },
+                    tooltip: {
+                        enabled: true,
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) label += ': ';
+                                label += context.parsed.y;
+                                label += ' quizzes';
+                                const total = context.chart.data.datasets[0].data.reduce((a, b) => a + b, 0);
+                                label += ' (' + ((context.parsed.y / total) * 100).toFixed(1) + '%)';
+                                return label;
+                            }
+                        },
+                        backgroundColor: 'rgba(0,0,0,0.7)',
+                        titleFont: { size: 16, weight: 'bold' },
+                        bodyFont: { size: 14 }
+                    }
+                }
+            }
+        });
+
+        // Pie Chart
+        new Chart(document.getElementById('categoryPieChart'), {
+            type: 'pie',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: data,
+                    backgroundColor: chartColors,
+                    hoverOffset: 30
+                }]
+            },
+            options: {
+                responsive: true,
+                animation: {
+                    duration: 3000,
+                    easing: 'easeOutBounce',
+                    animateRotate: true,
+                    animateScale: true
+                },
+                plugins: {
+                    legend: {
+                        position: 'right',
+                        labels: {
+                            usePointStyle: true,
+                            pointStyle: 'circle',
+                            padding: 20,
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                const value = context.parsed;
+                                const percentage = ((value / total) * 100).toFixed(1);
+                                return context.label + ': ' + value + ' quizzes (' + percentage + '%)';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+}
+

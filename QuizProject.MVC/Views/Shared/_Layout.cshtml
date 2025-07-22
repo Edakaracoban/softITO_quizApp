@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QuizApp</title>
+    <meta name="description" content="QuizProject - Test your knowledge and skills" />
+    <meta name="keywords" content="quiz, test, education, online quiz, learning" />
+    <link rel="icon" type="image/png" href="~/favicon.png" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/QuizProject.MVC.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/animations.css" asp-append-version="true" />
+
+    <style>
+        /* Sayfa arka planı beyaz */
+        body.splash-active #top-right-container {
+            display: none !important;
+        }
+
+        body {
+            background: white;
+            color: #212529; /* Bootstrap default text color */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+            /* Dark mode body style */
+            body.dark-mode {
+                background-color: #121212;
+                color: #eaeaea;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+        /* Sağ üst kapsayıcı */
+        #top-right-container {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Butonlar arası boşluk */
+            z-index: 10000;
+        }
+
+            /* Home butonu stili */
+            #top-right-container a.btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 36px;
+                min-width: 36px;
+                text-decoration: none;
+                user-select: none;
+                color: inherit;
+                font-size: 1.3rem;
+                padding: 4px 8px;
+                border: 1px solid #6c757d;
+                border-radius: 6px;
+                background-color: transparent;
+                transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+            }
+
+                #top-right-container a.btn:hover {
+                    background-color: #dc3545;
+                    color: white;
+                    border-color: #dc3545;
+                }
+
+        /* Toggle buton stili */
+        .mode-toggle {
+            font-size: 1.8rem;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            user-select: none;
+            color: inherit;
+            padding: 0;
+            margin: 0;
+            transition: color 0.3s ease;
+        }
+
+            .mode-toggle:hover {
+                color: #dc3545; /* Kırmızı hover */
+            }
+
+        /* GIF icon büyüklüğü ve ayarları */
+        #top-right-gif {
+            width: 48px;
+            height: 48px;
+            pointer-events: none; /* Tıklanabilir olmasın */
+        }
+
+            #top-right-gif img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                user-select: none;
+            }
+
+        /* Diğer stiller aynen devam */
+    </style>
+</head>
+<body>
+    <!-- Sağ üstte Home butonu, toggle ve gif kapsayıcısı -->
+    <div id="top-right-container">
+        <button id="modeToggle" class="mode-toggle" title="Toggle Theme">🌙</button>
+        <div id="top-right-gif">
+            <img src="~/img/giphy.gif" alt="App Icon" />
+        </div>
+    </div>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>
+        (function() {
+            const modeToggle = document.getElementById('modeToggle');
+            const body = document.body;
+
+            // Sayfa yüklendiğinde localStorage’dan tema bilgisini al
+            document.addEventListener('DOMContentLoaded', () => {
+                const theme = localStorage.getItem('theme');
+                if (theme === 'dark') {
+                    body.classList.add('dark-mode');
+                    modeToggle.textContent = '☀️';
+                } else {
+                    modeToggle.textContent = '🌙';
+                }
+            });
+
+            // Toggle butonuna tıklanma eventi
+            modeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                if(body.classList.contains('dark-mode')){
+                    modeToggle.textContent = '☀️';
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    modeToggle.textContent = '🌙';
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+        })();
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

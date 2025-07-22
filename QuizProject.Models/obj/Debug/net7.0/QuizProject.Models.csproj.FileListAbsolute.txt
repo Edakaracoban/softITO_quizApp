@@ -1,0 +1,16 @@
+C:\Users\Asus\Desktop\QuizProject\QuizProject.Models\bin\Debug\net7.0\QuizProject.Models.deps.json
+C:\Users\Asus\Desktop\QuizProject\QuizProject.Models\bin\Debug\net7.0\QuizProject.Models.dll
+C:\Users\Asus\Desktop\QuizProject\QuizProject.Models\bin\Debug\net7.0\QuizProject.Models.pdb
+C:\Users\Asus\Desktop\QuizProject\QuizProject.Models\bin\Debug\net7.0\QuizProject.Data.dll
+C:\Users\Asus\Desktop\QuizProject\QuizProject.Models\bin\Debug\net7.0\QuizProject.Data.pdb
+C:\Users\Asus\Desktop\QuizProject\QuizProject.Models\obj\Debug\net7.0\QuizProject.Models.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\QuizProject\QuizProject.Models\obj\Debug\net7.0\QuizProject.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\QuizProject\QuizProject.Models\obj\Debug\net7.0\QuizProject.Models.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\QuizProject\QuizProject.Models\obj\Debug\net7.0\QuizProject.Models.AssemblyInfo.cs
+C:\Users\Asus\Desktop\QuizProject\QuizProject.Models\obj\Debug\net7.0\QuizProject.Models.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\QuizProject\QuizProject.Models\obj\Debug\net7.0\QuizProject.Models.sourcelink.json
+C:\Users\Asus\Desktop\QuizProject\QuizProject.Models\obj\Debug\net7.0\QuizProj.7101F968.Up2Date
+C:\Users\Asus\Desktop\QuizProject\QuizProject.Models\obj\Debug\net7.0\QuizProject.Models.dll
+C:\Users\Asus\Desktop\QuizProject\QuizProject.Models\obj\Debug\net7.0\refint\QuizProject.Models.dll
+C:\Users\Asus\Desktop\QuizProject\QuizProject.Models\obj\Debug\net7.0\QuizProject.Models.pdb
+C:\Users\Asus\Desktop\QuizProject\QuizProject.Models\obj\Debug\net7.0\ref\QuizProject.Models.dll

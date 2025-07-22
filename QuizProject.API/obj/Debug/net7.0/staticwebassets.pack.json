@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\wwwroot\\img\\profile\\3ea0b213-d703-49e7-9c6c-36f9c4eb2cf5.jpg",
+      "PackagePath": "staticwebassets\\img\\profile\\3ea0b213-d703-49e7-9c6c-36f9c4eb2cf5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.API\\wwwroot\\img\\profile\\9b75d45e-9820-4a64-b582-7826c1462a0a.jpg",
+      "PackagePath": "staticwebassets\\img\\profile\\9b75d45e-9820-4a64-b582-7826c1462a0a.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.QuizProject.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.QuizProject.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.QuizProject.API.props",
+      "PackagePath": "build\\QuizProject.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.QuizProject.API.props",
+      "PackagePath": "buildMultiTargeting\\QuizProject.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.QuizProject.API.props",
+      "PackagePath": "buildTransitive\\QuizProject.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

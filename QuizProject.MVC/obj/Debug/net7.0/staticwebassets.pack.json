@@ -1,0 +1,445 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\QuizProject.MVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\QuizProject.MVC.7g7udzf723.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\css\\animations.css",
+      "PackagePath": "staticwebassets\\css\\animations.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\0b591LOg4m.gif",
+      "PackagePath": "staticwebassets\\img\\0b591LOg4m.gif"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\Authorize Kullanımı Önemli.html",
+      "PackagePath": "staticwebassets\\img\\Authorize Kullanımı Önemli.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\Authorize Kullanımı Önemli_files\\conversation-small-rygqhh0z.css",
+      "PackagePath": "staticwebassets\\img\\Authorize Kullanımı Önemli_files\\conversation-small-rygqhh0z.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\Authorize Kullanımı Önemli_files\\root-dgtf1dym.css",
+      "PackagePath": "staticwebassets\\img\\Authorize Kullanımı Önemli_files\\root-dgtf1dym.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\Authorize Kullanımı Önemli_files\\saved_resource.html",
+      "PackagePath": "staticwebassets\\img\\Authorize Kullanımı Önemli_files\\saved_resource.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\Question Mark What GIF.gif",
+      "PackagePath": "staticwebassets\\img\\Question Mark What GIF.gif"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\Quiz bump.gif",
+      "PackagePath": "staticwebassets\\img\\Quiz bump.gif"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\appquizproject.jpg",
+      "PackagePath": "staticwebassets\\img\\appquizproject.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\category\\english.png",
+      "PackagePath": "staticwebassets\\img\\category\\english.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\category\\geography.png",
+      "PackagePath": "staticwebassets\\img\\category\\geography.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\category\\grammar.png",
+      "PackagePath": "staticwebassets\\img\\category\\grammar.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\category\\math.png",
+      "PackagePath": "staticwebassets\\img\\category\\math.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\category\\science.png",
+      "PackagePath": "staticwebassets\\img\\category\\science.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\giphy.gif",
+      "PackagePath": "staticwebassets\\img\\giphy.gif"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\logo.jpg",
+      "PackagePath": "staticwebassets\\img\\logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\profile\\admin.jpg",
+      "PackagePath": "staticwebassets\\img\\profile\\admin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\profile\\agnestudent.jpg",
+      "PackagePath": "staticwebassets\\img\\profile\\agnestudent.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\profile\\azmi.jpg",
+      "PackagePath": "staticwebassets\\img\\profile\\azmi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\profile\\danielradcliffe.jpg",
+      "PackagePath": "staticwebassets\\img\\profile\\danielradcliffe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\profile\\default-avatar.png",
+      "PackagePath": "staticwebassets\\img\\profile\\default-avatar.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\profile\\emmawatson.jpg",
+      "PackagePath": "staticwebassets\\img\\profile\\emmawatson.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\profile\\janefonda.jpg",
+      "PackagePath": "staticwebassets\\img\\profile\\janefonda.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\profile\\johnwick.jpg",
+      "PackagePath": "staticwebassets\\img\\profile\\johnwick.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\profile\\studenttest.jpg",
+      "PackagePath": "staticwebassets\\img\\profile\\studenttest.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\profile\\teacher.png",
+      "PackagePath": "staticwebassets\\img\\profile\\teacher.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\profile\\theojames.jpeg",
+      "PackagePath": "staticwebassets\\img\\profile\\theojames.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\profile\\theojames.webp",
+      "PackagePath": "staticwebassets\\img\\profile\\theojames.webp"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\quiz\\Algebra.png",
+      "PackagePath": "staticwebassets\\img\\quiz\\Algebra.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\quiz\\Arithmetic.png",
+      "PackagePath": "staticwebassets\\img\\quiz\\Arithmetic.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\quiz\\Capitals.png",
+      "PackagePath": "staticwebassets\\img\\quiz\\Capitals.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\quiz\\Chemistry.png",
+      "PackagePath": "staticwebassets\\img\\quiz\\Chemistry.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\quiz\\Continents.png",
+      "PackagePath": "staticwebassets\\img\\quiz\\Continents.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\quiz\\Geometry.png",
+      "PackagePath": "staticwebassets\\img\\quiz\\Geometry.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\quiz\\Maps.png",
+      "PackagePath": "staticwebassets\\img\\quiz\\Maps.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\quiz\\Nouns.png",
+      "PackagePath": "staticwebassets\\img\\quiz\\Nouns.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\quiz\\Physics.png",
+      "PackagePath": "staticwebassets\\img\\quiz\\Physics.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\quiz\\SC.png",
+      "PackagePath": "staticwebassets\\img\\quiz\\SC.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\quiz\\Verbs.png",
+      "PackagePath": "staticwebassets\\img\\quiz\\Verbs.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\quiz\\biologyy.png",
+      "PackagePath": "staticwebassets\\img\\quiz\\biologyy.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\quiz\\erq.jpg",
+      "PackagePath": "staticwebassets\\img\\quiz\\erq.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\quiz\\evq.jpg",
+      "PackagePath": "staticwebassets\\img\\quiz\\evq.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\img\\quiz\\ewq.png",
+      "PackagePath": "staticwebassets\\img\\quiz\\ewq.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\QuizProject\\QuizProject.MVC\\wwwroot\\sounds\\mixkit-tick-tock-clock-timer-1045.mp3",
+      "PackagePath": "staticwebassets\\sounds\\mixkit-tick-tock-clock-timer-1045.mp3"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.QuizProject.MVC.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.QuizProject.MVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.QuizProject.MVC.props",
+      "PackagePath": "build\\QuizProject.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.QuizProject.MVC.props",
+      "PackagePath": "buildMultiTargeting\\QuizProject.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.QuizProject.MVC.props",
+      "PackagePath": "buildTransitive\\QuizProject.MVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

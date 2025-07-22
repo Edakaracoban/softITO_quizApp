@@ -1,0 +1,154 @@
+﻿@model QuizProject.Models.ViewModels.LoginVM
+
+@{
+    ViewData["Title"] = "Login";
+    var role = Model.Role ?? ViewData["Role"]?.ToString() ?? "Student";
+
+    string roleColor = role switch
+    {
+        "Admin" => "#dc3545",
+        "Teacher" => "#0d6efd",
+        "Student" => "#198754",
+        _ => "#6c757d"
+    };
+
+    string roleHoverColor = role switch
+    {
+        "Admin" => "#a71d2a",     // koyu kırmızı
+        "Teacher" => "#084ecf",   // koyu mavi
+        "Student" => "#155724",   // koyu yeşil
+        _ => "#555"
+    };
+
+    string roleIcon = role switch
+    {
+        "Admin" => "🛡️",
+        "Teacher" => "📚",
+        "Student" => "🎓",
+        _ => "👤"
+    };
+}
+
+<style>
+    body {
+        background-color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .login-card {
+        max-width: 400px;
+        margin: 200px auto;
+        padding: 30px 25px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        border-radius: 12px;
+        background-color: #fff;
+        border-top: 8px solid @roleColor;
+        color: #333;
+    }
+
+        .login-card h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: 700;
+            color: @roleColor;
+            user-select: none;
+        }
+
+            .login-card h2 .role-icon {
+                font-size: 2.5rem;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+
+    .btn-primary {
+        background-color: @roleColor;
+        border-color: @roleColor;
+    }
+
+        .btn-primary:hover {
+            background-color: @roleHoverColor;
+            border-color: @roleHoverColor;
+        }
+
+    a.text-success {
+        color: @roleColor;
+        font-weight: 600;
+    }
+
+    .go-home-btn {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        background-color: @roleColor;
+        color: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        transition: background-color 0.3s ease;
+        z-index: 1000;
+    }
+
+        .go-home-btn:hover {
+            background-color: @roleHoverColor;
+            color: white;
+        }
+</style>
+
+<a href="@Url.Action("Index", "Account")" class="go-home-btn" title="Go Home">🏠</a>
+
+<div class="login-card">
+    <h2>
+        <span class="role-icon">@roleIcon</span>
+        Login as @role
+    </h2>
+
+    @if (TempData["success"] != null)
+    {
+        <div class="alert alert-success mb-3" role="alert">
+            @TempData["success"]
+        </div>
+    }
+
+    @if (TempData["error"] != null)
+    {
+        <div class="alert alert-danger mb-3" role="alert">
+            @TempData["error"]
+        </div>
+    }
+
+    <form asp-action="Login" method="post" id="loginForm">
+        <input type="hidden" asp-for="Role" value="@role" />
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label"></label>
+            <input asp-for="Email" class="form-control" placeholder="email@example.com" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Password" class="form-label"></label>
+            <input asp-for="Password" type="password" class="form-control" placeholder="Your password" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+    </form>
+
+    <p class="mt-4 text-center">
+        Don’t have an account?
+        <a asp-action="Register" asp-route-role="@role" class="text-decoration-none text-success">Register as @role</a>
+    </p>
+
+    <a asp-action="ForgotPassword" asp-route-role="@role" class="text-decoration-none text-muted small">Forgot your password?</a>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

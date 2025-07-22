@@ -1,0 +1,28 @@
+﻿@model QuizProject.API.Dtos.UpdateUserDto
+
+<h2>Profil Güncelle</h2>
+
+<form asp-action="EditProfile" method="post">
+    <div>
+        <label>Ad Soyad</label>
+        <input asp-for="FullName" class="form-control" />
+        <span asp-validation-for="FullName" class="text-danger"></span>
+    </div>
+    <div>
+        <label>Doğum Tarihi</label>
+        <input asp-for="BirthDate" type="date" class="form-control" />
+        <span asp-validation-for="BirthDate" class="text-danger"></span>
+    </div>
+    <div>
+        <label>Profil Resmi URL</label>
+        <input asp-for="ProfileImageUrl" class="form-control" />
+        <span asp-validation-for="ProfileImageUrl" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Güncelle</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,28 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/QuizProject.API/img/profile/3ea0b213-d703-49e7-9c6c-36f9c4eb2cf5.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\profile\3ea0b213-d703-49e7-9c6c-36f9c4eb2cf5.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OBLragaK3j8ExLARF2QusRhvZ8\u002B/cPyRF/l0twhN6mc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"10853"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022OBLragaK3j8ExLARF2QusRhvZ8\u002B/cPyRF/l0twhN6mc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 22 Jul 2025 19:45:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/QuizProject.API/img/profile/3ea0b213-d703-49e7-9c6c-36f9c4eb2cf5.weyk312uvb.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\profile\3ea0b213-d703-49e7-9c6c-36f9c4eb2cf5.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"weyk312uvb"},{"Name":"integrity","Value":"sha256-OBLragaK3j8ExLARF2QusRhvZ8\u002B/cPyRF/l0twhN6mc="},{"Name":"label","Value":"_content/QuizProject.API/img/profile/3ea0b213-d703-49e7-9c6c-36f9c4eb2cf5.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10853"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022OBLragaK3j8ExLARF2QusRhvZ8\u002B/cPyRF/l0twhN6mc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 22 Jul 2025 19:45:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/QuizProject.API/img/profile/9b75d45e-9820-4a64-b582-7826c1462a0a.360x4rkc2a.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\profile\9b75d45e-9820-4a64-b582-7826c1462a0a.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"360x4rkc2a"},{"Name":"integrity","Value":"sha256-G4/f5WmXAct8upi9jExBU8U4G6EsyTUvUpmf9g4tsYY="},{"Name":"label","Value":"_content/QuizProject.API/img/profile/9b75d45e-9820-4a64-b582-7826c1462a0a.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"47927"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022G4/f5WmXAct8upi9jExBU8U4G6EsyTUvUpmf9g4tsYY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 22 Jul 2025 19:00:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/QuizProject.API/img/profile/9b75d45e-9820-4a64-b582-7826c1462a0a.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\profile\9b75d45e-9820-4a64-b582-7826c1462a0a.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-G4/f5WmXAct8upi9jExBU8U4G6EsyTUvUpmf9g4tsYY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"47927"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022G4/f5WmXAct8upi9jExBU8U4G6EsyTUvUpmf9g4tsYY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 22 Jul 2025 19:00:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

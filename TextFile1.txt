@@ -1,0 +1,44 @@
+? 5. Areas Yapýsý: MVC/Areas/Student
+Þimdi burada çok net bir organizasyon planlayabiliriz. Student alaný özelinde yapýlabilecek þeyler:
+
+Ne Yapýlabilir?	Örnek
+Quiz'leri listeleme	/Student/Quiz/Index
+Quiz çözme	/Student/Quiz/Take/{id}
+Çözüm sonucu görme	/Student/Result/Details/{id}
+Kendi geçmiþ sonuçlarýný listeleme	/Student/Result/MyResults
+Quiz'e yorum yapma	/Student/QuizComment/Create
+Kullanýcý profilini görüntüleme/güncelleme	/Student/Profile
+
+
+?? STUDENT Kullanýcýsý Ýçin Planladýðýn Akýþ:
+1. Kategori Seçimi
+GET /Student/Category/Index ? Tüm kategoriler listelenir.
+
+2. QuizType Seçimi (Kategoriye Göre)
+GET /Student/Category/{id}/QuizTypes ? Seçilen kategoriye ait TestType gruplarý gösterilir.
+
+3. Quiz Seçimi
+GET /Student/Quiz/List?categoryId=x&testTypeId=y ? Filtrelenmiþ quizler
+
+4. Quiz Çözümü
+GET /Student/Quiz/Take/{quizId} ? Sorular gösterilir.
+
+POST /Student/Quiz/Take ? Kullanýcý cevap verir, UserQuizResult ve UserAnswer kaydedilir.
+
+5. Doðru/Yanlýþ Geri Bildirimi
+Hemen sonuçlar gösterilir (score, doðru sayýsý, yanlýþlar vs.)
+
+6. Yorum Yapma ve Görüntüleme
+POST /Student/QuizComment/Create ? Quiz tamamlandýysa yorum hakký ver.
+
+GET /Student/Quiz/Details/{id} ? Diðer kullanýcýlarýn yorumlarý da gösterilir.
+
+7. Kendi Ýstatistikleri (Geçmiþ Sonuçlar)
+GET /Student/Result/MyResults
+
+GET /Student/Result/Details/{id}
+
+8. Profil Sayfasý
+GET /Student/Profile
+
+POST /Student/Profile/Update

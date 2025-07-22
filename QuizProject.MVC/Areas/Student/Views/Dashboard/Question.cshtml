@@ -1,0 +1,30 @@
+﻿@model QuizProject.Data.Models.Question
+
+@{
+    ViewBag.Title = "Soru";
+    int index = ViewBag.Index;
+    int total = ViewBag.TotalQuestions;
+}
+
+<h2>@Model.Text</h2>
+
+<form method="post" asp-action="SubmitAnswer">
+    <input type="hidden" name="index" value="@index" />
+    <input type="hidden" name="questionId" value="@Model.Id" />
+
+    <div>
+        <input type="radio" id="optionA" name="selectedOption" value="A" required />
+        <label for="optionA">@Model.OptionA</label>
+    </div>
+    <div>
+        <input type="radio" id="optionB" name="selectedOption" value="B" />
+        <label for="optionB">@Model.OptionB</label>
+    </div>
+
+    <div class="navigation-buttons">
+        <button type="submit" name="direction" value="prev" @(index == 0 ? "disabled" : "")>◀ Önceki</button>
+        <button type="submit" name="direction" value="next">▶ Sonraki</button>
+    </div>
+</form>
+
+<p>Soru @(index + 1) / @total</p>

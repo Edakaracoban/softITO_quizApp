@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "QuizProject.API\\QuizProject.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "QuizProject.MVC\\QuizProject.MVC.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

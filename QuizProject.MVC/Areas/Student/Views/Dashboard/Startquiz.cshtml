@@ -1,0 +1,173 @@
+﻿@model List<QuizProject.Data.Models.Category>
+@{
+    ViewData["Title"] = "Select a Category";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml";
+    var categories = Model ?? new List<QuizProject.Data.Models.Category>();
+    var count = categories.Count;
+    var angleStep = 360.0 / (count == 0 ? 1 : count);
+    var radius = 600;
+    var index = 0;
+}
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: hidden;
+        font-family: 'Segoe UI', sans-serif;
+    }
+    .center-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+    }
+    h2 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+    #searchInput {
+        padding: 0.75rem 1rem;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        width: 300px;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+        #searchInput:focus {
+            border-color: #198754;
+            outline: none;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+        }
+    .category-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 500px;
+        height: 600px;
+        margin-left: -350px;
+        margin-top: -350px;
+        pointer-events: none;
+        z-index: 1;
+    }
+    .category-card {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: #ffffff;
+        border: 2px solid #198754;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+        cursor: pointer;
+        pointer-events: auto;
+        user-select: none;
+    }
+        .category-card:hover {
+            transform: scale(1.6);
+            background-color: #198754;
+            border-color: #198754;
+            box-shadow: 0 15px 30px rgba(40, 167, 69, 0.7);
+            color: white;
+        }
+            .category-card:hover .category-name {
+                color: white;
+            }
+    .category-image {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #ddd;
+        margin-bottom: 0.4rem;
+        transition: border-color 0.3s ease;
+    }
+    .category-card:hover .category-image {
+        border-color: white;
+    }
+    .category-name {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #333;
+        transition: color 0.3s ease;
+        user-select: none;
+    }
+</style>
+<div class="center-content">
+    <h2>Select a Quiz Category</h2>
+    <input type="text" id="searchInput" placeholder="Search categories..." />
+</div>
+<div class="category-circle" id="categoryCircle">
+    @foreach (var category in categories)
+    {
+        var angleDeg = index * angleStep;
+        var angleRad = angleDeg * Math.PI / 180;
+        var x = radius * Math.Cos(angleRad);
+        var y = radius * Math.Sin(angleRad);
+        <div class="category-card"
+             data-id="@category.Id"
+             style="top: calc(50% + @(y)px); left: calc(50% + @(x)px);">
+            <img class="category-image" src="@(string.IsNullOrEmpty(category.ImageUrl) ? "/img/default-category.png" : category.ImageUrl)" alt="@category.Name" />
+            <div class="category-name">@category.Name</div>
+        </div>
+        index++;
+    }
+</div>
+<script>
+    const searchInput = document.getElementById('searchInput');
+    const categoryCircle = document.getElementById('categoryCircle');
+    let allCategories = Array.from(categoryCircle.children).map(card => ({
+        id: card.dataset.id,
+        name: card.querySelector('.category-name').textContent.trim(),
+        imageUrl: card.querySelector('img').src
+    }));
+        function renderCircular(categories) {
+        categoryCircle.innerHTML = '';
+        const radius = 300;
+        const angleStep = 360 / (categories.length || 1);
+
+        categories.forEach((cat, i) => {
+            const angleDeg = i * angleStep;
+            const angleRad = angleDeg * Math.PI / 180;
+            const x = radius * Math.cos(angleRad);
+            const y = radius * Math.sin(angleRad);
+
+            const card = document.createElement('div');
+            card.className = 'category-card';
+            card.setAttribute('data-id', cat.id);
+            card.style.top = `calc(50% + ${y}px)`;
+            card.style.left = `calc(50% + ${x}px)`;
+            card.innerHTML = `
+                <img class="category-image" src="${cat.imageUrl}" alt="${cat.name}" />
+                <div class="category-name">${cat.name}</div>
+            `;
+
+            card.addEventListener('click', () => {
+          window.location.href = `/Student/TestType?categoryId=${cat.id}`;
+
+            });
+
+            categoryCircle.appendChild(card); // ✅ Bu satır döngü İÇİNDE olmalı
+        });
+    }
+
+    renderCircular(allCategories);
+    searchInput.addEventListener('input', () => {
+        const term = searchInput.value.toLowerCase();
+        const filtered = allCategories.filter(c => c.name.toLowerCase().includes(term));
+        renderCircular(filtered);
+    });
+</script>
+
+
+
+

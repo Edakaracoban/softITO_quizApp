@@ -1,0 +1,232 @@
+﻿@{
+    ViewData["Title"] = "Who Are You?";
+    var roles = new[]
+    {
+        new { Name = "Admin", Color = "#dc3545", Icon = "🛡️", Title = "Admin", Desc = "Manage users and system settings" },
+        new { Name = "Teacher", Color = "#0d6efd", Icon = "📚", Title = "Teacher", Desc = "Create and manage quizzes" },
+        new { Name = "Student", Color = "#198754", Icon = "🎓", Title = "Student", Desc = "Join quizzes and track results" }
+    };
+}
+
+<style>
+    html.splash-active body {
+        overflow: hidden; /* Splash varken scroll kapalı */
+    }
+
+    /* Splash ekranı */
+    #splash {
+        position: fixed;
+        inset: 0;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 1s ease;
+    }
+
+        #splash.fade-out {
+            opacity: 0;
+        }
+
+        #splash img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: contain;
+            object-position: center;
+            user-select: none;
+        }
+
+    #main-content {
+        opacity: 0;
+        display: none;
+        transition: opacity 1s ease;
+        overflow: auto; /* Splash sonrası scroll aktif */
+    }
+
+        #main-content.visible {
+            opacity: 1;
+            display: block;
+        }
+
+    .text-center h2 {
+        margin-bottom: 1rem;
+    }
+
+    .text-center p {
+        margin-top: 1rem;
+    }
+
+    .orbit-container {
+        position: relative;
+        width: 600px;
+        height: 600px;
+        margin: 50px auto;
+    }
+
+    .orbit-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        background-color: #6c757d;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        user-select: none;
+    }
+
+    .orbit {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 400px;
+        margin: -200px 0 0 -200px;
+        animation: rotate 10s linear infinite;
+    }
+
+    .orbit-card {
+        position: absolute;
+        width: 180px;
+        height: 220px;
+        background: white;
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        text-align: center;
+        padding: 1.5rem;
+        cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+        color: var(--role-color);
+        border: 2px solid var(--role-color);
+        user-select: none;
+    }
+
+        .orbit-card:hover {
+            background-color: var(--role-color);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .orbit-card .role-icon {
+            font-size: 2.5rem;
+            color: inherit;
+            user-select: none;
+        }
+
+        .orbit-card .role-title {
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 1.3rem;
+            user-select: none;
+        }
+
+        .orbit-card .role-desc {
+            font-size: 1rem;
+            color: #666;
+            user-select: none;
+            transition: color 0.3s ease;
+        }
+
+        .orbit-card:hover .role-desc {
+            color: #e0e0e0;
+        }
+
+    /* Konumlar (saat 0, 4, 8 yönleri gibi) */
+    .card1 {
+        transform: rotate(0deg) translateX(200px) rotate(0deg);
+    }
+
+    .card2 {
+        transform: rotate(120deg) translateX(200px) rotate(-120deg);
+    }
+
+    .card3 {
+        transform: rotate(240deg) translateX(200px) rotate(-240deg);
+    }
+
+    @@keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<!-- Splash -->
+<div id="splash">
+    <img src="~/img/giphy.gif" alt="Splash" asp-append-version="true" />
+</div>
+
+<!-- Ana içerik -->
+<div id="main-content">
+    <div class="text-center">
+        <h2 class="fw-bold mt-4">Who Are You?</h2>
+        <p class="text-muted mb-5">Please select your role to continue</p>
+    </div>
+
+    <div class="orbit-container">
+        <div class="orbit-center">👤</div>
+        <div class="orbit">
+            @for (int i = 0; i < roles.Length; i++)
+            {
+                var role = roles[i];
+                var cardClass = $"card{i + 1}";
+
+                <a href="@Url.Action("Login", "Account", new { role = role.Name })" style="text-decoration:none;">
+                    <div class="orbit-card @cardClass" style="--role-color:@role.Color;">
+                        <div class="role-icon">@role.Icon</div>
+                        <div class="role-title">@role.Title</div>
+                        <div class="role-desc">@role.Desc</div>
+                    </div>
+                </a>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- Ses dosyası -->
+<audio id="clickSound" src="/sounds/mixkit-tick-tock-clock-timer-1045.mp3" preload="auto"></audio>
+<script>
+    document.documentElement.classList.add('splash-active');
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const splash = document.getElementById('splash');
+        const mainContent = document.getElementById('main-content');
+        const clickSound = document.getElementById('clickSound');
+
+        clickSound.loop = true;
+        clickSound.play(); // Doğrudan oynatmayı dene
+
+        setTimeout(() => {
+            splash.classList.add('fade-out');
+            setTimeout(() => {
+                splash.style.display = 'none';
+                mainContent.style.display = 'block';
+                document.body.style.overflow = 'auto';
+                setTimeout(() => {
+                    mainContent.classList.add('visible');
+                    document.documentElement.classList.remove('splash-active');
+                }, 50);
+            }, 1000);
+        }, 3000);
+
+        // Kartlara tıklanınca ses durdurulsun
+        const orbitCards = document.querySelectorAll('.orbit-card');
+        orbitCards.forEach(card => {
+            card.addEventListener('click', () => {
+                clickSound.pause();
+                clickSound.currentTime = 0;
+            });
+        });
+    });
+</script>
+

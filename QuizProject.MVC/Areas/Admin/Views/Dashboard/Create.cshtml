@@ -1,0 +1,175 @@
+﻿@model QuizProject.API.Dtos.AdminCreateUserDto
+
+@{
+    ViewData["Title"] = "Create User";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!-- Select2 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+<style>
+    .center-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh; /* 80vh yerine 70vh */
+        background-color: #f8f9fa;
+    }
+
+    .create-card {
+        background: #fff;
+        padding: 20px; /* 25px yerine 20px */
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        width: 100%;
+        max-width: 400px; /* 420px yerine 400px */
+    }
+
+        .create-card h2 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+            color: #333;
+        }
+
+    .photo-preview {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-top: 10px;
+        display: block;
+        border: 2px solid #ccc;
+    }
+
+    .role-preview {
+        padding: 6px 10px;
+        border-radius: 6px;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 0.9rem;
+    }
+</style>
+
+<div class="center-wrapper">
+    <div class="create-card">
+        <h2><span class="icon">➕</span> Create User</h2>
+
+        @using (Html.BeginForm("Create", "Dashboard", FormMethod.Post, new { enctype = "multipart/form-data", @id = "createUserForm" }))
+        {
+            @Html.AntiForgeryToken()
+
+            @Html.ValidationSummary(true, "", new { @class = "alert alert-danger" })
+
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "email@example.com" })
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                @Html.TextBoxFor(m => m.FullName, new { @class = "form-control", placeholder = "John Doe" })
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Username</label>
+                @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", placeholder = "username123" })
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "••••••••", autocomplete = "new-password" })
+            </div>
+
+            <!-- Phone Number -->
+            <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control", placeholder = "+90 555 555 55 55" })
+            </div>
+
+            <!-- Birth Date -->
+            <div class="mb-3">
+                <label class="form-label">Birth Date</label>
+                @Html.TextBoxFor(m => m.BirthDate, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Profile Photo</label>
+                <input type="file" name="ProfileImageFile" id="ProfileImageFile" class="form-control" accept="image/*" />
+                @Html.HiddenFor(m => m.ProfileImageBase64)
+                <img id="photoPreview" class="photo-preview" style="display:none;" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Role</label>
+                <select name="Role" class="form-control" id="roleSelect">
+                    <option value="">-- Select Role --</option>
+                    <option value="Admin" data-color="#dc3545" data-icon="🛡️">Admin</option>
+                    <option value="Teacher" data-color="#0d6efd" data-icon="📚">Teacher</option>
+                    <option value="Student" data-color="#198754" data-icon="🎓">Student</option>
+                </select>
+                <div id="rolePreview" class="role-preview mt-2" style="display:none;"></div>
+            </div>
+
+            <button type="submit" class="btn w-100 mt-2" style="background:#dc3545">Create User</button>
+        }
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#ProfileImageFile').on('change', function () {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const base64 = e.target.result.split(',')[1];
+                    $('input[name="ProfileImageBase64"]').val(base64);
+                    $('#photoPreview').attr('src', e.target.result).show();
+                };
+                reader.readAsDataURL(file); 
+            }
+        });
+
+        $('#roleSelect').select2({
+            width: '100%',
+            templateResult: formatRole,
+            templateSelection: formatRole,
+            escapeMarkup: function (m) { return m; }
+        });
+
+        function formatRole(role) {
+            if (!role.id) return role.text;
+            let color = $(role.element).data('color');
+            let icon = $(role.element).data('icon');
+            return `<div style="display:flex; align-items:center; color:${color} !important; font-weight:500;">
+                        <span style="font-size:1.2em; margin-right:6px;">${icon}</span>
+                        ${role.text}
+                    </div>`;
+        }
+
+        $('#roleSelect').on('change', function () {
+            const selectedRole = $(this).val();
+            const roleInfos = {
+                "Admin": { color: "#dc3545", icon: "🛡️" },
+                "Teacher": { color: "#0d6efd", icon: "📚" },
+                "Student": { color: "#198754", icon: "🎓" }
+            };
+            const preview = $('#rolePreview');
+            if (roleInfos[selectedRole]) {
+                preview.css({
+                    display: 'inline-flex',
+                    backgroundColor: roleInfos[selectedRole].color + "20",
+                    borderLeft: `6px solid ${roleInfos[selectedRole].color}`,
+                    color: roleInfos[selectedRole].color
+                }).html(`<span class="icon">${roleInfos[selectedRole].icon}</span> ${selectedRole}`);
+            } else preview.hide();
+        });
+    });
+</script>

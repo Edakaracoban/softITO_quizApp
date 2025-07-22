@@ -1,0 +1,175 @@
+﻿@model QuizProject.Models.ViewModels.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+    var role = Model.Role ?? ViewData["Role"]?.ToString() ?? "Student";
+
+    // Role'a göre renk ve ikon seçimi
+    string roleColor = role switch
+    {
+        "Admin" => "#dc3545",    // Bootstrap kırmızı
+        "Teacher" => "#0d6efd",  // Bootstrap mavi
+        "Student" => "#198754",  // Bootstrap yeşil
+        _ => "#6c757d"           // Gri (default)
+    };
+
+    string roleIcon = role switch
+    {
+        "Admin" => "🛡️",
+        "Teacher" => "📚",
+        "Student" => "🎓",
+        _ => "👤"
+    };
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<style>
+    .register-card {
+        max-width: 500px;
+        margin: 150px auto;
+        padding: 2.5rem;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        background-color: #ffffff;
+        animation: slideFadeIn 0.6s ease;
+        border-top: 8px solid @roleColor;
+        color: #333;
+    }
+
+    @@keyframes slideFadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .form-label {
+        font-weight: 600;
+    }
+
+    .form-control:focus {
+        border-color: @roleColor;
+        box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1), 0 0 0 0.25rem rgba( @roleColor.Replace("#", "0x"), 0.25);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: @roleColor;
+        user-select: none;
+    }
+
+        h2 .role-icon {
+            font-size: 2.5rem;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+    .btn-success {
+        width: 100%;
+        background-color: @roleColor;
+        border-color: @roleColor;
+    }
+
+        .btn-success:hover {
+            background-color: darken( @roleColor, 10%);
+            border-color: darken( @roleColor, 10%);
+        }
+
+    a.text-primary {
+        color: @roleColor;
+        font-weight: 600;
+    }
+
+    /* Go Home button */
+    .go-home-btn {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        background-color: @roleColor;
+        color: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        transition: background-color 0.3s ease;
+        z-index: 1000;
+    }
+
+        .go-home-btn:hover {
+            background-color: darken( @roleColor, 10%);
+            color: white;
+        }
+</style>
+
+<!-- Go Home Button -->
+<a href="@Url.Action("Index", "Account")" class="go-home-btn" title="Go Home">🏠</a>
+
+<div class="register-card">
+
+    <h2>
+        <span class="role-icon">@roleIcon</span>
+        Register as @role
+    </h2>
+
+    @if (TempData["error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["error"]</div>
+    }
+
+    <form asp-action="Register" method="post">
+        <input type="hidden" asp-for="Role" value="@role" />
+
+        <div class="mb-3">
+            <label asp-for="FullName" class="form-label"></label>
+            <input asp-for="FullName" class="form-control" placeholder="John Doe" />
+            <span asp-validation-for="FullName" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label"></label>
+            <input asp-for="Email" class="form-control" placeholder="email@example.com" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Password" class="form-label"></label>
+            <input asp-for="Password" type="password" class="form-control" placeholder="Password" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="ConfirmPassword" class="form-label"></label>
+            <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="Repeat password" />
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="BirthDate" class="form-label"></label>
+            <input asp-for="BirthDate" type="date" class="form-control" />
+            <span asp-validation-for="BirthDate" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-success">Register</button>
+    </form>
+
+    <p class="mt-4 text-center">
+        Already have an account?
+        <a asp-action="Login" asp-route-role="@role" class="text-decoration-none text-primary">Login as @role</a>
+    </p>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

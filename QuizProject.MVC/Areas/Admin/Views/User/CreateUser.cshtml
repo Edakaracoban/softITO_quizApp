@@ -1,0 +1,154 @@
+﻿@* https://localhost:7016/Admin/User/CreateUser *@
+
+
+@model QuizProject.MVC.ViewModels.AdminCreateUserViewModel
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Create New User";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+<style>
+    .create-user-card {
+        max-width: 500px;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+        .create-user-card h3 {
+            font-weight: 700;
+            color: #0d6efd;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+    .form-label {
+        font-weight: 600;
+    }
+
+    .form-control:focus {
+        box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+    }
+
+    .btn-submit {
+        width: 100%;
+        padding: 12px;
+        font-weight: bold;
+        font-size: 1rem;
+        border-radius: 8px;
+    }
+
+    .alert {
+        max-width: 500px;
+        margin: 20px auto;
+    }
+</style>
+
+<div class="create-user-card">
+    <h3><i class="bi bi-person-plus-fill"></i> Create New User</h3>
+
+    <form asp-action="CreateUser" method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label">Email</label>
+            <input asp-for="Email" class="form-control" placeholder="Enter email address" />
+            <span asp-validation-for="Email" class="text-danger small"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="FullName" class="form-label">Full Name</label>
+            <input asp-for="FullName" class="form-control" placeholder="Enter full name" />
+            <span asp-validation-for="FullName" class="text-danger small"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="UserName" class="form-label">Username</label>
+            <input asp-for="UserName" class="form-control" placeholder="Enter username" />
+            <span asp-validation-for="UserName" class="text-danger small"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="PhoneNumber" class="form-label">Phone Number</label>
+            <input asp-for="PhoneNumber" class="form-control" placeholder="Enter phone number" />
+            <span asp-validation-for="PhoneNumber" class="text-danger small"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="BirthDate" class="form-label">Birth Date</label>
+            <input asp-for="BirthDate" type="date" class="form-control" />
+            <span asp-validation-for="BirthDate" class="text-danger small"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Role" class="form-label">Role</label>
+            <select asp-for="Role" class="form-select">
+                <option value="">-- Select Role --</option>
+                <option value="Admin">🛡️ Admin</option>
+                <option value="Teacher">📚 Teacher</option>
+                <option value="Student">🎓 Student</option>
+            </select>
+            <span asp-validation-for="Role" class="text-danger small"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Password" class="form-label">Password</label>
+            <input asp-for="Password" type="password" class="form-control" placeholder="Enter password" />
+            <span asp-validation-for="Password" class="text-danger small"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Profile Image</label>
+            <div class="input-group">
+                <input type="file" id="ProfileImage" name="ProfileImage" class="form-control d-none" accept="image/*" onchange="updateFileName()" />
+                <label for="ProfileImage" class="btn btn-outline-secondary">
+                    <i class="bi bi-upload"></i> Choose File
+                </label>
+                <span id="fileName" class="ms-2 text-muted">No file selected</span>
+            </div>
+            <span asp-validation-for="ProfileImage" class="text-danger small"></span>
+        </div>
+
+        <!-- Optional checkbox -->
+        <div class="form-check mb-3">
+            <input asp-for="EmailConfirmed" class="form-check-input" type="checkbox" />
+            <label asp-for="EmailConfirmed" class="form-check-label">Email Confirmed</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-submit">
+            <i class="bi bi-send-check-fill"></i> Create User
+        </button>
+    </form>
+</div>
+
+@if (TempData["error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show">
+        <i class="bi bi-exclamation-triangle-fill"></i> @TempData["error"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (TempData["success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show">
+        <i class="bi bi-check-circle-fill"></i> @TempData["success"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function updateFileName() {
+            const input = document.getElementById('ProfileImage');
+            const fileName = input.files.length > 0 ? input.files[0].name : 'No file selected';
+            document.getElementById('fileName').textContent = fileName;
+        }
+    </script>
+}
